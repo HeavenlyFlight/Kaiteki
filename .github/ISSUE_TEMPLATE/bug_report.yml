@@ -1,0 +1,40 @@
+name: Bug report
+description: Create a bug report about Kaiteki
+title: "Bug report"
+labels: [ bug ]
+body:
+- type: textarea
+  id: what
+  attributes:
+    label: What happened?
+    placeholder: My computer exploded
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected behavior
+    description: If the solution is not obvious, please enter what you want to be changed in order to fix your issue.
+    placeholder: For it to work
+- type: textarea
+  id: reproduction
+  attributes:
+    label: How to reproduce
+    placeholder: |
+      1.
+      2.
+      3.
+      ...
+- type: dropdown
+  id: platform
+  attributes:
+    label: What platform are you seeing the issue on?
+    options:
+    - Android
+    - Windows
+    - Linux
+    - Web
+- type: textarea
+  id: context
+  attributes:
+    label: Additional context
